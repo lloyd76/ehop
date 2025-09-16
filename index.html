@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EHOP – Ever Heard of Party</title>
+    <meta name="description" content="EHOP is a modern event organizing company offering end-to-end planning, décor, ushering, and rentals for weddings, birthdays, baby showers, and corporate events." />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body class="antialiased bg-white text-neutral-900 selection:bg-amber-200/60" style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji';">
+    <!-- Top Navigation -->
+    <header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-neutral-200">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <a href="#" class="inline-flex items-center gap-2" aria-label="EHOP Home">
+          <div class="text-xl sm:text-2xl font-semibold tracking-tight">
+            <span class="px-2 py-1 rounded-md border border-neutral-200 shadow-sm">EHOP</span>
+          </div>
+          <span class="hidden sm:inline text-sm text-neutral-500">Ever Heard of Party</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="#services" class="text-neutral-700 hover:text-neutral-900 hover:underline underline-offset-4">Services</a>
+          <a href="#about" class="text-neutral-700 hover:text-neutral-900 hover:underline underline-offset-4">About</a>
+          <a href="#gallery" class="text-neutral-700 hover:text-neutral-900 hover:underline underline-offset-4">Gallery</a>
+          <a href="#contact" class="text-neutral-700 hover:text-neutral-900 hover:underline underline-offset-4">Contact</a>
+        </nav>
+        <div class="flex items-center gap-2">
+          <a href="#contact" class="group inline-flex items-center gap-2 rounded-lg px-3.5 py-2 text-sm font-medium text-white bg-gradient-to-r from-amber-500 via-rose-400 to-amber-400 hover:from-amber-600 hover:via-rose-500 hover:to-amber-500 shadow-sm ring-1 ring-inset ring-amber-500/30 hover:ring-amber-500/50 transition-colors">
+            <span>Plan Your Event</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 translate-x-0 group-hover:translate-x-0.5 transition-transform"></i>
+          </a>
+          <button id="mobileMenuBtn" class="md:hidden inline-flex items-center justify-center p-2 rounded-md border border-neutral-200 hover:bg-neutral-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/50">
+            <i data-lucide="menu" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile nav -->
+      <div id="mobileNav" class="md:hidden hidden border-t border-neutral-200">
+        <div class="px-4 py-3 flex flex-col gap-2 text-sm">
+          <a href="#services" class="px-3 py-2 rounded-md hover:bg-neutral-50">Services</a>
+          <a href="#about" class="px-3 py-2 rounded-md hover:bg-neutral-50">About</a>
+          <a href="#gallery" class="px-3 py-2 rounded-md hover:bg-neutral-50">Gallery</a>
+          <a href="#contact" class="px-3 py-2 rounded-md hover:bg-neutral-50">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative">
+      <!-- Carousel backgrounds -->
+      <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute inset-0 transition-opacity duration-[1200ms] ease-out opacity-100" data-hero-slide>
+          <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=1600&auto=format&fit=crop" alt="Elegant wedding reception décor" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 transition-opacity duration-[1200ms] ease-out opacity-0" data-hero-slide>
+          <img src="https://images.unsplash.com/photo-1578926375605-eaf7559b145b?q=80&w=1600&auto=format&fit=crop" alt="Vibrant birthday celebration" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 transition-opacity duration-[1200ms] ease-out opacity-0" data-hero-slide>
+          <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1600&auto=format&fit=crop" alt="Professional corporate event setup" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 transition-opacity duration-[1200ms] ease-out opacity-0" data-hero-slide>
+          <img src="https://images.unsplash.com/photo-1565031201938-97b63a96fca8?q=80&w=1600&auto=format&fit=crop" alt="Intimate baby shower décor" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-b from-white/70 via-white/60 to-white"></div>
+      </div>
+
+      <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-24 pb-28 sm:pt-28 sm:pb-36">
+        <div class="max-w-2xl">
+          <span class="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white/80 px-3 py-1 text-xs text-neutral-700 shadow-sm backdrop-blur">
+            <i data-lucide="sparkles" class="w-4 h-4 text-amber-600"></i>
+            Event Excellence, End-to-End
+          </span>
+          <h1 class="mt-4 text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">
+            Your Moments, Our Masterpiece
+          </h1>
+          <p class="mt-4 text-neutral-700 text-base sm:text-lg max-w-xl">
+            EHOP is a modern event company delivering seamless planning, décor, ushering, and rentals for weddings, birthdays, baby showers, and corporate events.
+          </p>
+          <div class="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-3">
+            <a href="#contact" class="group inline-flex items-center gap-2 rounded-lg px-5 py-3 text-sm font-medium text-white bg-gradient-to-r from-amber-500 via-rose-400 to-amber-400 hover:from-amber-600 hover:via-rose-500 hover:to-amber-500 shadow-sm ring-1 ring-inset ring-amber-500/30 hover:ring-amber-500/50 transition-colors">
+              Plan Your Event with Us
+              <i data-lucide="arrow-right" class="w-5 h-5 translate-x-0 group-hover:translate-x-0.5 transition-transform"></i>
+            </a>
+            <a href="#services" class="inline-flex items-center gap-2 rounded-lg px-5 py-3 text-sm font-medium text-neutral-900 bg-white/80 hover:bg-white shadow-sm ring-1 ring-inset ring-neutral-200 hover:ring-neutral-300">
+              Explore Services
+              <i data-lucide="menu" class="w-5 h-5"></i>
+            </a>
+          </div>
+          <div class="mt-10 flex items-center gap-6 text-sm text-neutral-700">
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle" class="w-5 h-5 text-amber-600"></i>
+              200+ Events Coordinated
+            </div>
+            <div class="hidden sm:flex items-center gap-2">
+              <i data-lucide="shield-check" class="w-5 h-5 text-amber-600"></i>
+              Reliable. Creative. Affordable.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="relative border-t border-neutral-200">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+        <div class="flex items-end justify-between">
+          <div>
+            <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">Our Services</h2>
+            <p class="mt-2 text-neutral-700 max-w-2xl">One-stop solution from planning to execution, with premium rentals and elegant ushering.</p>
+          </div>
+          <a href="#contact" class="hidden sm:inline-flex items-center gap-2 text-sm font-medium text-amber-700 hover:text-amber-800">
+            Get a custom quote
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <div class="mt-10 grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Weddings -->
+          <article class="group rounded-2xl border border-neutral-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div class="relative aspect-[16/10] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=1400&auto=format&fit=crop" alt="Wedding décor and planning" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 text-amber-700">
+                <i data-lucide="heart" class="w-5 h-5"></i>
+                <h3 class="text-lg font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">Weddings</h3>
+              </div>
+              <p class="mt-2 text-sm text-neutral-700">Full-service planning, décor, coordination, and rentals for effortless “I do’s”.</p>
+            </div>
+          </article>
+          <!-- Birthdays -->
+          <article class="group rounded-2xl border border-neutral-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div class="relative aspect-[16/10] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1578926375605-eaf7559b145b?q=80&w=1400&auto=format&fit=crop" alt="Birthday party setup" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 text-amber-700">
+                <i data-lucide="party-popper" class="w-5 h-5"></i>
+                <h3 class="text-lg font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">Birthdays</h3>
+              </div>
+              <p class="mt-2 text-sm text-neutral-700">From playful kids’ themes to milestone soirées—curated and stress-free.</p>
+            </div>
+          </article>
+          <!-- Baby Showers -->
+          <article class="group rounded-2xl border border-neutral-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div class="relative aspect-[16/10] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1565031201938-97b63a96fca8?q=80&w=1400&auto=format&fit=crop" alt="Baby shower décor" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 text-amber-700">
+                <i data-lucide="baby" class="w-5 h-5"></i>
+                <h3 class="text-lg font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">Baby Showers</h3>
+              </div>
+              <p class="mt-2 text-sm text-neutral-700">Intimate, stylish setups with bespoke backdrops, balloons, and florals.</p>
+            </div>
+          </article>
+          <!-- Corporate -->
+          <article class="group rounded-2xl border border-neutral-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div class="relative aspect-[16/10] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1400&auto=format&fit=crop" alt="Corporate event hall" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 text-amber-700">
+                <i data-lucide="briefcase" class="w-5 h-5"></i>
+                <h3 class="text-lg font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">Corporate Events</h3>
+              </div>
+              <p class="mt-2 text-sm text-neutral-700">Conferences, launches, and galas—professional, on-brand, and on time.</p>
+            </div>
+          </article>
+          <!-- Ushering -->
+          <article class="group rounded-2xl border border-neutral-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div class="relative aspect-[16/10] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1400&auto=format&fit=crop" alt="Ushering staff" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 text-amber-700">
+                <i data-lucide="users" class="w-5 h-5"></i>
+                <h3 class="text-lg font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">Ushering Services</h3>
+              </div>
+              <p class="mt-2 text-sm text-neutral-700">Well-trained, elegant hosts to guide guests and elevate your event.</p>
+            </div>
+          </article>
+          <!-- Rentals & Décor -->
+          <article class="group rounded-2xl border border-neutral-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div class="relative aspect-[16/10] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1400&auto=format&fit=crop" alt="Event rentals and décor" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 text-amber-700">
+                <i data-lucide="sofa" class="w-5 h-5"></i>
+                <h3 class="text-lg font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">Event Rentals & Décor</h3>
+              </div>
+              <p class="mt-2 text-sm text-neutral-700">Furniture, backdrops, lighting, and florals—curated to your theme.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="relative border-t border-neutral-200 bg-neutral-50">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+          <div>
+            <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">Why Choose EHOP</h2>
+            <p class="mt-3 text-neutral-700">
+              We blend creativity with precision—designing celebrations that feel personal and run flawlessly. From the first idea to the final applause, we manage every detail.
+            </p>
+            <div class="mt-6 space-y-3">
+              <div class="flex items-start gap-3">
+                <div class="mt-0.5">
+                  <i data-lucide="wand-2" class="w-5 h-5 text-amber-600"></i>
+                </div>
+                <div>
+                  <div class="font-medium">Creative Concepts</div>
+                  <p class="text-sm text-neutral-700">Bold themes, elegant palettes, and immersive experiences.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="mt-0.5">
+                  <i data-lucide="shield-check" class="w-5 h-5 text-amber-600"></i>
+                </div>
+                <div>
+                  <div class="font-medium">Reliable Execution</div>
+                  <p class="text-sm text-neutral-700">On-time, on-budget coordination with trusted vendors.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="mt-0.5">
+                  <i data-lucide="wallet" class="w-5 h-5 text-amber-600"></i>
+                </div>
+                <div>
+                  <div class="font-medium">Smart Value</div>
+                  <p class="text-sm text-neutral-700">Flexible packages and transparent pricing for every occasion.</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-8 grid grid-cols-3 gap-4">
+              <div class="rounded-xl border border-neutral-200 bg-white p-4 text-center">
+                <div class="text-2xl font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">200+</div>
+                <div class="text-xs text-neutral-600 mt-1">Events Coordinated</div>
+              </div>
+              <div class="rounded-xl border border-neutral-200 bg-white p-4 text-center">
+                <div class="text-2xl font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">50+</div>
+                <div class="text-xs text-neutral-600 mt-1">Corporate Clients</div>
+              </div>
+              <div class="rounded-xl border border-neutral-200 bg-white p-4 text-center">
+                <div class="text-2xl font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">98%</div>
+                <div class="text-xs text-neutral-600 mt-1">Satisfaction Rate</div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">Milestones</h3>
+            <div class="mt-4 space-y-5">
+              <div class="flex gap-4">
+                <div class="flex-none">
+                  <div class="w-8 h-8 rounded-full bg-amber-100 border border-amber-200 flex items-center justify-center">
+                    <i data-lucide="flag" class="w-4 h-4 text-amber-700"></i>
+                  </div>
+                </div>
+                <div class="flex-1">
+                  <div class="text-sm font-medium">2019</div>
+                  <p class="text-sm text-neutral-700">Founded with a mission to make event planning effortless.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="flex-none">
+                  <div class="w-8 h-8 rounded-full bg-amber-100 border border-amber-200 flex items-center justify-center">
+                    <i data-lucide="network" class="w-4 h-4 text-amber-700"></i>
+                  </div>
+                </div>
+                <div class="flex-1">
+                  <div class="text-sm font-medium">2021</div>
+                  <p class="text-sm text-neutral-700">Scaled vendor network and launched corporate offerings.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="flex-none">
+                  <div class="w-8 h-8 rounded-full bg-amber-100 border border-amber-200 flex items-center justify-center">
+                    <i data-lucide="sparkles" class="w-4 h-4 text-amber-700"></i>
+                  </div>
+                </div>
+                <div class="flex-1">
+                  <div class="text-sm font-medium">2023</div>
+                  <p class="text-sm text-neutral-700">Expanded rentals and premium décor line.</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-8 rounded-xl border border-neutral-200 bg-white p-5">
+              <div class="flex items-start gap-3">
+                <i data-lucide="phone" class="w-5 h-5 text-amber-700 mt-0.5"></i>
+                <div>
+                  <div class="text-sm font-medium">Concierge Support</div>
+                  <p class="text-sm text-neutral-700">Message us your idea—we’ll respond within 24 hours.</p>
+                </div>
+              </div>
+              <div class="mt-4 flex flex-wrap items-center gap-3">
+                <a href="#contact" class="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium text-white bg-neutral-900 hover:bg-neutral-800 ring-1 ring-inset ring-neutral-800">
+                  Start Planning
+                  <i data-lucide="calendar" class="w-4 h-4"></i>
+                </a>
+                <a href="https://wa.me/0000000000" target="_blank" class="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium text-amber-700 hover:text-amber-800 ring-1 ring-inset ring-amber-200 hover:ring-amber-300 bg-amber-50">
+                  WhatsApp
+                  <i data-lucide="message-circle" class="w-4 h-4"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="relative border-t border-neutral-200">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+        <div class="flex items-end justify-between">
+          <div>
+            <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">Gallery</h2>
+            <p class="mt-2 text-neutral-700 max-w-2xl">A glimpse of celebrations we’ve crafted—tap to view.</p>
+          </div>
+          <div class="hidden sm:flex items-center gap-2 text-sm text-neutral-600">
+            <i data-lucide="image" class="w-4 h-4"></i>
+            Optimized for mobile
+          </div>
+        </div>
+
+        <div class="mt-8 grid gap-3 sm:gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
+          <!-- 8 gallery items -->
+          <button class="group relative rounded-xl overflow-hidden border border-neutral-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/50" data-lightbox-btn>
+            <img src="https://images.unsplash.com/photo-1481833761820-0509d3217039?q=80&w=800&auto=format&fit=crop" alt="Wedding table setting" class="h-40 sm:h-44 w-full object-cover group-hover:scale-[1.03] transition-transform duration-500">
+          </button>
+          <button class="group relative rounded-xl overflow-hidden border border-neutral-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/50" data-lightbox-btn>
+            <img src="https://images.unsplash.com/photo-1541280910158-c4e14f9c94a3?q=80&w=800&auto=format&fit=crop" alt="Stage backdrop and florals" class="h-40 sm:h-44 w-full object-cover group-hover:scale-[1.03] transition-transform duration-500">
+          </button>
+          <button class="group relative rounded-xl overflow-hidden border border-neutral-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/50" data-lightbox-btn>
+            <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=800&auto=format&fit=crop" alt="Corporate conference setup" class="h-40 sm:h-44 w-full object-cover group-hover:scale-[1.03] transition-transform duration-500">
+          </button>
+          <button class="group relative rounded-xl overflow-hidden border border-neutral-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/50" data-lightbox-btn>
+            <img src="https://images.unsplash.com/photo-1543966888-7c1dc482a810?q=80&w=800&auto=format&fit=crop" alt="Birthday dessert table" class="h-40 sm:h-44 w-full object-cover group-hover:scale-[1.03] transition-transform duration-500">
+          </button>
+          <button class="group relative rounded-xl overflow-hidden border border-neutral-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/50" data-lightbox-btn>
+            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=800&auto=format&fit=crop" alt="Outdoor wedding ceremony" class="h-40 sm:h-44 w-full object-cover group-hover:scale-[1.03] transition-transform duration-500">
+          </button>
+          <button class="group relative rounded-xl overflow-hidden border border-neutral-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/50" data-lightbox-btn>
+            <img src="https://images.unsplash.com/photo-1543007630-9710e4a00a20?q=80&w=800&auto=format&fit=crop" alt="Baby shower pastel décor" class="h-40 sm:h-44 w-full object-cover group-hover:scale-[1.03] transition-transform duration-500">
+          </button>
+          <button class="group relative rounded-xl overflow-hidden border border-neutral-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/50" data-lightbox-btn>
+            <img src="https://images.unsplash.com/photo-1561489401-0437d99c1f94?q=80&w=800&auto=format&fit=crop" alt="Product launch stage" class="h-40 sm:h-44 w-full object-cover group-hover:scale-[1.03] transition-transform duration-500">
+          </button>
+          <button class="group relative rounded-xl overflow-hidden border border-neutral-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/50" data-lightbox-btn>
+            <img src="https://images.unsplash.com/photo-1521336575822-6da63fb45455?q=80&w=800&auto=format&fit=crop" alt="Romantic floral centerpiece" class="h-40 sm:h-44 w-full object-cover group-hover:scale-[1.03] transition-transform duration-500">
+          </button>
+        </div>
+      </div>
+
+      <!-- Lightbox Modal -->
+      <div id="lightbox" class="fixed inset-0 z-[60] hidden items-center justify-center bg-black/70 p-4">
+        <div class="relative w-full max-w-4xl">
+          <button id="lightboxClose" class="absolute -top-10 right-0 text-white/90 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/50 inline-flex items-center gap-2">
+            <i data-lucide="x" class="w-6 h-6"></i>
+            <span class="text-sm">Close</span>
+          </button>
+          <div class="rounded-2xl overflow-hidden bg-neutral-900 ring-1 ring-neutral-800">
+            <img id="lightboxImg" src="" alt="Gallery image" class="w-full h-auto max-h-[80vh] object-contain bg-neutral-900">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Booking -->
+    <section id="contact" class="relative border-t border-neutral-200 bg-neutral-50">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
+          <div>
+            <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">Let’s Plan Your Event</h2>
+            <p class="mt-2 text-neutral-700">Tell us about your occasion. We’ll get back within 24 hours with ideas and availability.</p>
+
+            <form id="bookingForm" class="mt-8 space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="name" class="block text-sm font-medium text-neutral-800">Name</label>
+                  <input id="name" name="name" type="text" required placeholder="Your full name" class="mt-1 w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500" />
+                </div>
+                <div>
+                  <label for="contactField" class="block text-sm font-medium text-neutral-800">Contact</label>
+                  <input id="contactField" name="contact" type="text" required placeholder="Email or phone" class="mt-1 w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="relative">
+                  <label for="eventType" class="block text-sm font-medium text-neutral-800">Event Type</label>
+                  <div class="mt-1 relative">
+                    <select id="eventType" name="type" class="appearance-none w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 pr-10 text-sm placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500">
+                      <option>Wedding</option>
+                      <option>Birthday</option>
+                      <option>Baby Shower</option>
+                      <option>Corporate</option>
+                      <option>Ushering</option>
+                      <option>Rentals & Décor</option>
+                    </select>
+                    <i data-lucide="chevron-down" class="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-neutral-500"></i>
+                  </div>
+                </div>
+                <div>
+                  <label for="date" class="block text-sm font-medium text-neutral-800">Event Date</label>
+                  <input id="date" name="date" type="date" class="mt-1 w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500" />
+                </div>
+              </div>
+
+              <div>
+                <label for="message" class="block text-sm font-medium text-neutral-800">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tell us about your venue, theme, guest count, and budget range." class="mt-1 w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500"></textarea>
+              </div>
+
+              <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3">
+                <button type="submit" class="group inline-flex items-center gap-2 rounded-lg px-5 py-3 text-sm font-medium text-white bg-gradient-to-r from-amber-500 via-rose-400 to-amber-400 hover:from-amber-600 hover:via-rose-500 hover:to-amber-500 shadow-sm ring-1 ring-inset ring-amber-500/30 hover:ring-amber-500/50">
+                  Send Request
+                  <i data-lucide="send" class="w-5 h-5"></i>
+                </button>
+                <p class="text-sm text-neutral-600">Quick response promise: within 24 hours.</p>
+              </div>
+              <p id="formStatus" class="hidden text-sm mt-2"></p>
+            </form>
+          </div>
+
+          <div class="lg:pl-8">
+            <div class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm">
+              <h3 class="text-lg font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">Contact</h3>
+              <div class="mt-4 space-y-3 text-sm">
+                <div class="flex items-center gap-3">
+                  <i data-lucide="mail" class="w-5 h-5 text-amber-700"></i>
+                  <a href="mailto:hello@ehop.events" class="hover:underline">hello@ehop.events</a>
+                </div>
+                <div class="flex items-center gap-3">
+                  <i data-lucide="phone" class="w-5 h-5 text-amber-700"></i>
+                  <a href="tel:+10000000000" class="hover:underline">+1 (000) 000-0000</a>
+                </div>
+                <div class="flex items-center gap-3">
+                  <i data-lucide="map-pin" class="w-5 h-5 text-amber-700"></i>
+                  <span>Lagos, Nigeria • Available Nationwide</span>
+                </div>
+              </div>
+
+              <div class="mt-6 border-t border-neutral-200 pt-6">
+                <div class="text-sm font-medium">Social</div>
+                <div class="mt-3 flex items-center gap-3">
+                  <a href="https://instagram.com" target="_blank" class="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm ring-1 ring-inset ring-neutral-200 hover:bg-neutral-50">
+                    <i data-lucide="instagram" class="w-4 h-4"></i>
+                    Instagram
+                  </a>
+                  <a href="https://tiktok.com" target="_blank" class="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm ring-1 ring-inset ring-neutral-200 hover:bg-neutral-50">
+                    <i data-lucide="film" class="w-4 h-4"></i>
+                    TikTok
+                  </a>
+                  <a href="https://wa.me/0000000000" target="_blank" class="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm ring-1 ring-inset ring-amber-200 bg-amber-50 text-amber-700 hover:bg-amber-100 hover:ring-amber-300">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i>
+                    WhatsApp
+                  </a>
+                </div>
+              </div>
+
+              <div class="mt-6 border-t border-neutral-200 pt-6 text-sm text-neutral-600">
+                <p>Prefer a quick call? We can schedule a 15-minute consult to align on vision, budget, and timeline.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-neutral-200">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div class="flex items-center gap-3">
+            <div class="text-lg font-semibold tracking-tight">
+              <span class="px-2 py-1 rounded-md border border-neutral-200 shadow-sm">EHOP</span>
+            </div>
+            <span class="text-sm text-neutral-600">Your Moments, Our Masterpiece</span>
+          </div>
+          <div class="text-sm text-neutral-600">
+            © <span id="year"></span> EHOP. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Initialize lucide icons with stroke width 1.5
+      document.addEventListener('DOMContentLoaded', () => {
+        if (window.lucide) {
+          window.lucide.createIcons({
+            attrs: { 'stroke-width': 1.5 }
+          });
+        }
+      });
+
+      // Mobile nav toggle
+      const mobileBtn = document.getElementById('mobileMenuBtn');
+      const mobileNav = document.getElementById('mobileNav');
+      if (mobileBtn && mobileNav) {
+        mobileBtn.addEventListener('click', () => {
+          mobileNav.classList.toggle('hidden');
+          mobileBtn.classList.toggle('ring-2');
+          mobileBtn.classList.toggle('ring-amber-500/40');
+        });
+      }
+
+      // Hero carousel
+      const slides = Array.from(document.querySelectorAll('[data-hero-slide]'));
+      let idx = 0;
+      if (slides.length > 0) {
+        setInterval(() => {
+          const current = slides[idx];
+          idx = (idx + 1) % slides.length;
+          const next = slides[idx];
+          current.classList.add('opacity-0');
+          current.classList.remove('opacity-100');
+          next.classList.add('opacity-100');
+          next.classList.remove('opacity-0');
+        }, 5000);
+      }
+
+      // Lightbox
+      const lb = document.getElementById('lightbox');
+      const lbImg = document.getElementById('lightboxImg');
+      const lbClose = document.getElementById('lightboxClose');
+      const lbBtns = document.querySelectorAll('[data-lightbox-btn]');
+      lbBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const img = btn.querySelector('img');
+          if (!img) return;
+          lbImg.src = img.src.replace('w=800', 'w=1600');
+          lb.classList.remove('hidden');
+          lb.classList.add('flex');
+          document.body.classList.add('overflow-hidden');
+        });
+      });
+      const closeLb = () => {
+        lb.classList.add('hidden');
+        lb.classList.remove('flex');
+        document.body.classList.remove('overflow-hidden');
+      };
+      lbClose.addEventListener('click', closeLb);
+      lb.addEventListener('click', (e) => {
+        if (e.target === lb) closeLb();
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !lb.classList.contains('hidden')) closeLb();
+      });
+
+      // Simple form handler (demo)
+      const form = document.getElementById('bookingForm');
+      const statusEl = document.getElementById('formStatus');
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          statusEl.className = 'text-sm mt-2 text-neutral-700';
+          statusEl.textContent = 'Sending...';
+          setTimeout(() => {
+            statusEl.className = 'text-sm mt-2 text-emerald-700';
+            statusEl.textContent = 'Thanks! Your request has been received. We’ll be in touch within 24 hours.';
+            form.reset();
+          }, 900);
+        });
+      }
+
+      // Year in footer
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
