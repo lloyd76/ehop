@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EHOP – Ever Heard of Party</title>
+    <meta name="description" content="EHOP is a modern event organizing company offering end-to-end planning, décor, ushering, and rentals for weddings, birthdays, baby showers, and corporate events." />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body class="antialiased bg-white text-neutral-900 selection:bg-amber-200/60" style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji';">
+    <!-- Top Navigation -->
+    <header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-neutral-200">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <a href="#" class="inline-flex items-center gap-2" aria-label="EHOP Home">
+          <div class="text-xl sm:text-2xl font-semibold tracking-tight">
+            <span class="px-2 py-1 rounded-md border border-neutral-200 shadow-sm">EHOP</span>
+          </div>
+          <span class="hidden sm:inline text-sm text-neutral-500">Ever Heard of Party</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="#services" class="text-neutral-700 hover:text-neutral-900 hover:underline underline-offset-4">Services</a>
+          <a href="#about" class="text-neutral-700 hover:text-neutral-900 hover:underline underline-offset-4">About</a>
+          <a href="#gallery" class="text-neutral-700 hover:text-neutral-900 hover:underline underline-offset-4">Gallery</a>
+          <a href="#contact" class="text-neutral-700 hover:text-neutral-900 hover:underline underline-offset-4">Contact</a>
+        </nav>
+        <div class="flex items-center gap-2">
+          <a href="#contact" class="group inline-flex items-center gap-2 rounded-lg px-3.5 py-2 text-sm font-medium text-white bg-gradient-to-r from-amber-500 via-rose-400 to-amber-400 hover:from-amber-600 hover:via-rose-500 hover:to-amber-500 shadow-sm ring-1 ring-inset ring-amber-500/30 hover:ring-amber-500/50 transition-colors">
+            <span>Plan Your Event</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 translate-x-0 group-hover:translate-x-0.5 transition-transform"></i>
+          </a>
+          <button id="mobileMenuBtn" class="md:hidden inline-flex items-center justify-center p-2 rounded-md border border-neutral-200 hover:bg-neutral-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/50">
+            <i data-lucide="menu" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile nav -->
+      <div id="mobileNav" class="md:hidden hidden border-t border-neutral-200">
+        <div class="px-4 py-3 flex flex-col gap-2 text-sm">
+          <a href="#services" class="px-3 py-2 rounded-md hover:bg-neutral-50">Services</a>
+          <a href="#about" class="px-3 py-2 rounded-md hover:bg-neutral-50">About</a>
+          <a href="#gallery" class="px-3 py-2 rounded-md hover:bg-neutral-50">Gallery</a>
+          <a href="#contact" class="px-3 py-2 rounded-md hover:bg-neutral-50">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative">
+      <!-- Carousel backgrounds -->
+      <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute inset-0 transition-opacity duration-[1200ms] ease-out opacity-100" data-hero-slide>
+          <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1600&auto=format&fit=crop" alt="Elegant wedding reception décor" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 transition-opacity duration-[1200ms] ease-out opacity-0" data-hero-slide>
+          <img src="img/wd.jpeg" alt="Vibrant birthday celebration" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 transition-opacity duration-[1200ms] ease-out opacity-0" data-hero-slide>
+          <img src="img/bth.jpeg" alt="Professional corporate event setup" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 transition-opacity duration-[1200ms] ease-out opacity-0" data-hero-slide>
+          <img src="img/bs.jpeg" alt="Intimate baby shower décor" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-b from-white/60 via-white/60 to-white"></div>
+      </div>
+
+      <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-24 pb-28 sm:pt-28 sm:pb-36">
+        <div class="max-w-2xl">
+          <span class="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white/80 px-3 py-1 text-xs text-neutral-700 shadow-sm backdrop-blur">
+            <i data-lucide="sparkles" class="w-4 h-4 text-amber-600"></i>
+            Event Excellence, End-to-End
+          </span>
+          <h1 class="mt-4 text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">
+            Your Moments, Our Masterpiece
+          </h1>
+          <p class="mt-4 text-neutral-700 text-base sm:text-lg max-w-xl">
+            EHOP is a modern event company delivering seamless planning, decor, ushering, and rentals for weddings, birthdays, baby showers, and corporate events.
+          </p>
+          <div class="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-3">
+            <a href="#contact" class="group inline-flex items-center gap-2 rounded-lg px-5 py-3 text-sm font-medium text-white bg-gradient-to-r from-amber-500 via-rose-400 to-amber-400 hover:from-amber-600 hover:via-rose-500 hover:to-amber-500 shadow-sm ring-1 ring-inset ring-amber-500/30 hover:ring-amber-500/50 transition-colors">
+              Plan Your Event with Us
+              <i data-lucide="arrow-right" class="w-5 h-5 translate-x-0 group-hover:translate-x-0.5 transition-transform"></i>
+            </a>
+            <a href="#services" class="inline-flex items-center gap-2 rounded-lg px-5 py-3 text-sm font-medium text-neutral-900 bg-white/80 hover:bg-white shadow-sm ring-1 ring-inset ring-neutral-200 hover:ring-neutral-300">
+              Explore Services
+            </a>
+          </div>
+          <div class="mt-10 flex flex-wrap items-center gap-6 text-sm text-neutral-700">
+  <div class="flex items-center gap-2">
+    <i data-lucide="check-circle" class="w-5 h-5 text-amber-600"></i>
+    200+ Events Coordinated
+  </div>
+  <div class="flex items-center gap-2">
+    <i data-lucide="shield-check" class="w-5 h-5 text-amber-600"></i>
+    Reliable. Creative. Affordable.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="relative border-t border-neutral-200">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+        <div class="flex items-end justify-between">
+          <div>
+            <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">Our Services</h2>
+            <p class="mt-2 text-neutral-700 max-w-2xl">One-stop solution from planning to execution, with premium rentals and elegant ushering.</p>
+          </div>
+        </div>
+
+        <div class="mt-10 grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Weddings -->
+          <article class="group rounded-2xl border border-neutral-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-0.5">
+            <div class="relative aspect-[16/10] overflow-hidden">
+              <img src="img/wd.jpeg" alt="Wedding décor and planning" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 text-amber-700">
+                <i data-lucide="heart" class="w-5 h-5"></i>
+                <h3 class="text-lg font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">Weddings</h3>
+              </div>
+              <p class="mt-2 text-sm text-neutral-700">Full service planning, decor, coordination, and rentals for effortless “I do’s”.</p>
+            </div>
+          </article>
+          <!-- Birthdays -->
+          <article class="group rounded-2xl border border-neutral-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-0.5">
+            <div class="relative aspect-[16/10] overflow-hidden">
+              <img src="img/bth.jpeg" alt="Birthday party setup" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 text-amber-700">
+                <i data-lucide="party-popper" class="w-5 h-5"></i>
+                <h3 class="text-lg font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">Birthdays</h3>
+              </div>
+              <p class="mt-2 text-sm text-neutral-700">From playful kids themes to milestone soirees curated and stress free.</p>
+            </div>
+          </article>
+          <!-- Baby Showers -->
+          <article class="group rounded-2xl border border-neutral-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-0.5">
+            <div class="relative aspect-[16/10] overflow-hidden">
+              <img src="img/bs.jpeg" alt="Baby shower décor" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 text-amber-700">
+                <i data-lucide="baby" class="w-5 h-5"></i>
+                <h3 class="text-lg font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">Baby Showers</h3>
+              </div>
+              <p class="mt-2 text-sm text-neutral-700">Intimate, stylish setups with bespoke backdrops, balloons, and florals.</p>
+            </div>
+          </article>
+          <!-- Corporate -->
+          <article class="group rounded-2xl border border-neutral-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-0.5">
+            <div class="relative aspect-[16/10] overflow-hidden">
+              <img src="img/cpe.jpeg" alt="Corporate event hall" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 text-amber-700">
+                <i data-lucide="briefcase" class="w-5 h-5"></i>
+                <h3 class="text-lg font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">Corporate Events</h3>
+              </div>
+              <p class="mt-2 text-sm text-neutral-700">Conferences, launches, and galas—professional, on brand, and on time.</p>
+            </div>
+          </article>
+          <!-- Ushering -->
+          <article class="group rounded-2xl border border-neutral-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-0.5">
+            <div class="relative aspect-[16/10] overflow-hidden">
+              <img src="img/glr/ehop5.jpg" alt="Ushering staff" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 text-amber-700">
+                <i data-lucide="users" class="w-5 h-5"></i>
+                <h3 class="text-lg font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">Ushering Services</h3>
+              </div>
+              <p class="mt-2 text-sm text-neutral-700">Well trained, elegant hosts to guide guests and elevate your event.</p>
+            </div>
+          </article>
+          <!-- Rentals & Décor -->
+          <article class="group rounded-2xl border border-neutral-200 bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-0.5">
+            <div class="relative aspect-[16/10] overflow-hidden">
+              <img src="img/rnt.jpeg" alt="Event rentals and décor" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 text-amber-700">
+                <i data-lucide="sofa" class="w-5 h-5"></i>
+                <h3 class="text-lg font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">Event Rentals & Décor</h3>
+              </div>
+              <p class="mt-2 text-sm text-neutral-700">Furniture, backdrops, lighting, and florals curated to your theme.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="relative border-t border-neutral-200 bg-neutral-50">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+          <div>
+            <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">Why Choose EHOP</h2>
+            <p class="mt-3 text-neutral-700">
+              We blend creativity with precision designing celebrations that feel personal and run flawlessly. From the first idea to the final applause, we manage every detail.
+            </p>
+            <div class="mt-6 space-y-3">
+              <div class="flex items-start gap-3">
+                <div class="mt-0.5">
+                  <i data-lucide="wand-2" class="w-5 h-5 text-amber-600"></i>
+                </div>
+                <div>
+                  <div class="font-medium">Creative Concepts</div>
+                  <p class="text-sm text-neutral-700">Bold themes, elegant palettes, and immersive experiences.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="mt-0.5">
+                  <i data-lucide="shield-check" class="w-5 h-5 text-amber-600"></i>
+                </div>
+                <div>
+                  <div class="font-medium">Reliable Execution</div>
+                  <p class="text-sm text-neutral-700">On time, on budget coordination with trusted vendors.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="mt-0.5">
+                  <i data-lucide="wallet" class="w-5 h-5 text-amber-600"></i>
+                </div>
+                <div>
+                  <div class="font-medium">Smart Value</div>
+                  <p class="text-sm text-neutral-700">Flexible packages and transparent pricing for every occasion.</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-8 grid grid-cols-3 gap-4">
+              <div class="rounded-xl border border-neutral-200 bg-white p-4 text-center">
+                <div class="text-2xl font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">200+</div>
+                <div class="text-xs text-neutral-600 mt-1">Events Coordinated</div>
+              </div>
+              <div class="rounded-xl border border-neutral-200 bg-white p-4 text-center">
+                <div class="text-2xl font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">50+</div>
+                <div class="text-xs text-neutral-600 mt-1">Corporate Clients</div>
+              </div>
+              <div class="rounded-xl border border-neutral-200 bg-white p-4 text-center">
+                <div class="text-2xl font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">98%</div>
+                <div class="text-xs text-neutral-600 mt-1">Satisfaction Rate</div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">Milestones</h3>
+            <div class="mt-4 space-y-5">
+              <div class="flex gap-4">
+                <div class="flex-none">
+                  <div class="w-8 h-8 rounded-full bg-amber-100 border border-amber-200 flex items-center justify-center">
+                    <i data-lucide="flag" class="w-4 h-4 text-amber-700"></i>
+                  </div>
+                </div>
+                <div class="flex-1">
+                  <div class="text-sm font-medium">2019</div>
+                  <p class="text-sm text-neutral-700">Founded with a mission to make event planning effortless.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="flex-none">
+                  <div class="w-8 h-8 rounded-full bg-amber-100 border border-amber-200 flex items-center justify-center">
+                    <i data-lucide="network" class="w-4 h-4 text-amber-700"></i>
+                  </div>
+                </div>
+                <div class="flex-1">
+                  <div class="text-sm font-medium">2021</div>
+                  <p class="text-sm text-neutral-700">Scaled vendor network and launched corporate offerings.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="flex-none">
+                  <div class="w-8 h-8 rounded-full bg-amber-100 border border-amber-200 flex items-center justify-center">
+                    <i data-lucide="sparkles" class="w-4 h-4 text-amber-700"></i>
+                  </div>
+                </div>
+                <div class="flex-1">
+                  <div class="text-sm font-medium">2023</div>
+                  <p class="text-sm text-neutral-700">Expanded rentals and premium décor line.</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-8 rounded-xl border border-neutral-200 bg-white p-5">
+              <div class="flex items-start gap-3">
+                <i data-lucide="phone" class="w-5 h-5 text-amber-700 mt-0.5"></i>
+                <div>
+                  <div class="text-sm font-medium">Contact Support</div>
+                  <p class="text-sm text-neutral-700">Message us your idea we’ll respond within 24 hours.</p>
+                </div>
+              </div>
+              <div class="mt-4 flex flex-wrap items-center gap-3">
+                <a href="#contact" class="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium text-white bg-neutral-900 hover:bg-neutral-800 ring-1 ring-inset ring-neutral-800">
+                  Start Planning
+                  <i data-lucide="calendar" class="w-4 h-4"></i>
+                </a>
+                <a href="https://wa.me/0000000000" target="_blank" class="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium text-amber-700 hover:text-amber-800 ring-1 ring-inset ring-amber-200 hover:ring-amber-300 bg-amber-50">
+                  WhatsApp
+                  <i data-lucide="message-circle" class="w-4 h-4"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="relative border-t border-neutral-200">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+        <div class="flex items-end justify-between">
+          <div>
+            <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">Gallery</h2>
+            <p class="mt-2 text-neutral-700 max-w-2xl">A glimpse of celebrations we’ve crafted, tap to view.</p>
+          </div>
+          <div class="hidden sm:flex items-center gap-2 text-sm text-neutral-600">
+          </div>
+        </div>
+
+        <div class="mt-8 grid gap-3 sm:gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
+          <!-- 8 gallery items -->
+          <button class="group relative rounded-xl overflow-hidden border border-neutral-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/50" data-lightbox-btn>
+            <img src="img/glr/ehop.jpg" alt="Wedding table setting" class="h-40 sm:h-44 w-full object-cover group-hover:scale-[1.03] transition-transform duration-500">
+          </button>
+          <button class="group relative rounded-xl overflow-hidden border border-neutral-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/50" data-lightbox-btn>
+            <img src="img/glr/ehop1.jpg" alt="Stage backdrop and florals" class="h-40 sm:h-44 w-full object-cover group-hover:scale-[1.03] transition-transform duration-500">
+          </button>
+          <button class="group relative rounded-xl overflow-hidden border border-neutral-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/50" data-lightbox-btn>
+            <img src="img/glr/ehop2.jpg" alt="Corporate conference setup" class="h-40 sm:h-44 w-full object-cover group-hover:scale-[1.03] transition-transform duration-500">
+          </button>
+          <button class="group relative rounded-xl overflow-hidden border border-neutral-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/50" data-lightbox-btn>
+            <img src="img/glr/ehop3.jpg" alt="Birthday dessert table" class="h-40 sm:h-44 w-full object-cover group-hover:scale-[1.03] transition-transform duration-500">
+          </button>
+          <button class="group relative rounded-xl overflow-hidden border border-neutral-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/50" data-lightbox-btn>
+            <img src="img/glr/ehop4.jpg" alt="Outdoor wedding ceremony" class="h-40 sm:h-44 w-full object-cover group-hover:scale-[1.03] transition-transform duration-500">
+          </button>
+          <button class="group relative rounded-xl overflow-hidden border border-neutral-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/50" data-lightbox-btn>
+            <img src="img/glr/ehop6.jpg" alt="Baby shower pastel décor" class="h-40 sm:h-44 w-full object-cover group-hover:scale-[1.03] transition-transform duration-500">
+          </button>
+          <button class="group relative rounded-xl overflow-hidden border border-neutral-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/50" data-lightbox-btn>
+            <img src="img/glr/ehop7.jpg" alt="Product launch stage" class="h-40 sm:h-44 w-full object-cover group-hover:scale-[1.03] transition-transform duration-500">
+          </button>
+          <button class="group relative rounded-xl overflow-hidden border border-neutral-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/50" data-lightbox-btn>
+            <img src="img/glr/ehop8.jpg" alt="Romantic floral centerpiece" class="h-40 sm:h-44 w-full object-cover group-hover:scale-[1.03] transition-transform duration-500">
+          </button>
+        </div>
+      </div>
+
+      <!-- Lightbox Modal -->
+      <div id="lightbox" class="fixed inset-0 z-[60] hidden items-center justify-center bg-black/70 p-4">
+        <div class="relative w-full max-w-4xl">
+          <button id="lightboxClose" class="absolute -top-10 right-0 text-white/90 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/50 inline-flex items-center gap-2">
+            <i data-lucide="x" class="w-6 h-6"></i>
+            <span class="text-sm">Close</span>
+          </button>
+          <div class="rounded-2xl overflow-hidden bg-neutral-900 ring-1 ring-neutral-800">
+            <img id="lightboxImg" src="" alt="Gallery image" class="w-full h-auto max-h-[80vh] object-contain bg-neutral-900">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Booking -->
+    <section id="contact" class="relative border-t border-neutral-200 bg-neutral-50">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
+          <div>
+            <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">Let’s Plan Your Event</h2>
+            <p class="mt-2 text-neutral-700">Tell us about your occasion. We’ll get back within 24 hours with ideas and availability.</p>
+
+            <form id="bookingForm" class="mt-8 space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="name" class="block text-sm font-medium text-neutral-800">Name</label>
+                  <input id="name" name="name" type="text" required placeholder="Your full name" class="mt-1 w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500" />
+                </div>
+                <div>
+                  <label for="contactField" class="block text-sm font-medium text-neutral-800">Contact</label>
+                  <input id="contactField" name="contact" type="text" required placeholder="Email or phone" class="mt-1 w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="relative">
+                  <label for="eventType" class="block text-sm font-medium text-neutral-800">Event Type</label>
+                  <div class="mt-1 relative">
+                    <select id="eventType" name="type" class="appearance-none w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 pr-10 text-sm placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500">
+                      <option>Wedding</option>
+                      <option>Birthday</option>
+                      <option>Baby Shower</option>
+                      <option>Corporate</option>
+                      <option>Ushering</option>
+                      <option>Rentals & Decor</option>
+                      <option>Parties</option>
+                      <option>Other</option>
+                    </select>
+                    <i data-lucide="chevron-down" class="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-neutral-500"></i>
+                  </div>
+                </div>
+                <div>
+                  <label for="date" class="block text-sm font-medium text-neutral-800">Event Date</label>
+                  <input id="date" name="date" type="date" class="mt-1 w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500" />
+                </div>
+              </div>
+
+              <div>
+                <label for="message" class="block text-sm font-medium text-neutral-800">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tell us about your venue, theme, guest count, and budget range." class="mt-1 w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500"></textarea>
+              </div>
+
+              <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3">
+                <button type="submit" class="group inline-flex items-center gap-2 rounded-lg px-5 py-3 text-sm font-medium text-white bg-gradient-to-r from-amber-500 via-rose-400 to-amber-400 hover:from-amber-600 hover:via-rose-500 hover:to-amber-500 shadow-sm ring-1 ring-inset ring-amber-500/30 hover:ring-amber-500/50">
+                  Send Request
+                  <i data-lucide="send" class="w-5 h-5"></i>
+                </button>
+                <p class="text-sm text-neutral-600">Quick response promise: within 24 hours.</p>
+              </div>
+              <p id="formStatus" class="hidden text-sm mt-2"></p>
+            </form>
+          </div>
+
+          <div class="lg:pl-8">
+            <div class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm">
+              <h3 class="text-lg font-semibold tracking-tight" style="font-family: Poppins, Inter, ui-sans-serif">Contact</h3>
+              <div class="mt-4 space-y-3 text-sm">
+                <div class="flex items-center gap-3">
+                  <i data-lucide="mail" class="w-5 h-5 text-amber-700"></i>
+                  <a href="mailto:hello@ehop.events" class="hover:underline">hello@ehop.events</a>
+                </div>
+                <div class="flex items-center gap-3">
+                  <i data-lucide="phone" class="w-5 h-5 text-amber-700"></i>
+                  <a href="tel:+233 504486771" class="hover:underline">+233 504486771</a>
+                </div>
+                <div class="flex items-center gap-3">
+                  <i data-lucide="map-pin" class="w-5 h-5 text-amber-700"></i>
+                  <span>Takoradi, Ghana • Available Nationwide</span>
+                </div>
+              </div>
+
+              <div class="mt-6 border-t border-neutral-200 pt-6">
+                <div class="text-sm font-medium">Social</div>
+                <div class="mt-3 flex items-center gap-1">
+                  <a href="https://www.instagram.com/ever_heard_of_party/" target="_blank" class="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm ring-1 ring-inset ring-neutral-200 hover:bg-neutral-50">
+                    <i data-lucide="instagram" class="w-3 h-3"></i>
+                    Instagram
+                  </a>
+                  <a href="https://tiktok.com" target="_blank" class="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm ring-1 ring-inset ring-neutral-200 hover:bg-neutral-50">
+                    <i data-lucide="film" class="w-3 h-3"></i>
+                    TikTok
+                  </a>
+                  <a href="https://wa.me/0000000000" target="_blank" class="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm ring-1 ring-inset ring-amber-200 bg-amber-50 text-amber-700 hover:bg-amber-100 hover:ring-amber-300">
+                    <i data-lucide="message-circle" class="w-3 h-3"></i>
+                    WhatsApp
+                  </a>
+                </div>
+              </div>
+
+              <div class="mt-6 border-t border-neutral-200 pt-6 text-sm text-neutral-600">
+                <p>Prefer a quick call? We can schedule a 15 minute consult to align on vision, budget, and timeline.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- TEAM SECTION START -->
+<style>
+    .team-section {
+        max-width: 1200px;
+        margin: 10px auto 60px;
+        padding: -10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .section-header {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .section-header h2 {
+        font-size: 2.5rem;
+        color: #2c3e50;
+        margin-bottom: 15px;
+        position: relative;
+        display: inline-block;
+    }
+    .section-header h2::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 4px;
+        background: linear-gradient(90deg, #F1BE49, #c2a13e);
+        border-radius: 2px;
+    }
+    .section-header p {
+        font-size: 1.2rem;
+        color: #7f8c8d;
+        max-width: 600px;
+        margin: 20px auto 0;
+    }
+    .team-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    .team-member {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 300px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .team-member:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+    .member-img {
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+    }
+    .member-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+    .team-member:hover .member-img img {
+        transform: scale(1.1);
+    }
+    .member-info {
+        padding: 20px;
+        text-align: center;
+    }
+    .member-info h3 {
+        font-size: 1.4rem;
+        color: #2c3e50;
+        margin-bottom: 5px;
+    }
+    .member-info p {
+        color: #F1BE49;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    .member-social {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+    .member-social a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background: #f3f4f6;
+        color: #2c3e50;
+        transition: all 0.3s ease;
+    }
+    .member-social a:hover {
+        background: #3498db;
+        color: white;
+        transform: translateY(-3px);
+    }
+    @media (max-width: 768px) {
+        .team-container {
+            gap: 20px;
+        }
+        .team-member {
+            width: 100%;
+            max-width: 350px;
+        }
+        .section-header h2 {
+            font-size: 2rem;
+        }
+    }
+</style>
+
+<section class="team-section">
+    <div class="section-header">
+        <h2>OUR TEAM</h2>
+        <p>Meet Our Team Members</p>
+    </div>
+    
+    <div class="team-container">
+        <!-- Team Member 1 -->
+        <div class="team-member">
+            <div class="member-img">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=60" alt="Team Member">
+            </div>
+            <div class="member-info">
+                <h3>John Anderson</h3>
+                <p>Creative Director</p>
+                <div class="member-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Team Member 2 -->
+        <div class="team-member">
+            <div class="member-img">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=500&q=60" alt="Team Member">
+            </div>
+            <div class="member-info">
+                <h3>Sarah Johnson</h3>
+                <p>Lead Designer</p>
+                <div class="member-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Team Member 3 -->
+        <div class="team-member">
+            <div class="member-img">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=500&q=60" alt="Team Member">
+            </div>
+            <div class="member-info">
+                <h3>Michael Roberts</h3>
+                <p>Project Manager</p>
+                <div class="member-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Simple staggered fade-in animation
+    document.addEventListener('DOMContentLoaded', function() {
+        const teamMembers = document.querySelectorAll('.team-member');
+        teamMembers.forEach((member, index) => {
+            member.style.opacity = '0';
+            member.style.transform = 'translateY(20px)';
+            member.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            setTimeout(() => {
+                member.style.opacity = '1';
+                member.style.transform = 'translateY(0)';
+            }, 200 * index);
+        });
+    });
+</script>
+<!-- TEAM SECTION END -->
+    
+     <!-- Testimonials -->
+    <section class="py-16 sm:py-20 scroll-element fade-in-up">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="relative overflow-hidden rounded-3xl ring-1 ring-gray-200 bg-gradient-to-br from-gray-50 to-white sm:px-10 lg:px-14 lg:py-14 pt-10 pr-6 pb-10 pl-6">
+                <div class="relative">
+                    <div class="flex items-end justify-between mb-8">
+                      <div class="">
+                        <p class="text-[11px] sm:text-xs tracking-widest text-gray-500 font-light uppercase"> Testimonials</p>
+                        <h3 class="mt-2 text-1 :text-2xl tracking-tight font-light">Creative partnerships that inspire.</h3>
+                      </div>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+                      <div class="lg:col-span-4">
+                        <div class="w-40 h-48 sm:w-48 sm:h-56 rounded-2xl overflow-hidden ring-1 ring-gray-200 bg-white">
+                          <img id="t-avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&amp;fit=crop&amp;w=640&amp;q=60" alt="Client portrait" class="w-full h-full object-cover">
+                        </div>
+                        <p class="mt-4 text-[1x] tracking-widest text-gray-500 uppercase font-light">Client Story</p>
+                        <div class="mt-6 flex items-center gap-3">
+                          <button id="t-prev" class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white ring-1 ring-gray-200 shadow-sm hover:bg-gray-50 transition" aria-label="Previous testimonial">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-left" class="lucide lucide-arrow-left h-4 w-4 text-gray-900"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>
+                          </button>
+                          <button id="t-next" class="inline-flex h-10 w-10 ring-1 ring-black/10 hover:bg-black transition text-white bg-gray-900 rounded-full shadow-sm items-center justify-center" aria-label="Next testimonial">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right h-4 w-4"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="lg:col-span-6 relative">
+                        <div class="text-gray-900">
+                          <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-gray-100 ring-1 ring-gray-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="quote" class="lucide lucide-quote h-4 w-4 text-gray-700"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg>
+                          </span>
+                          <p id="t-quote" class="mt-2 text-1xl sm:text-2xl md:text-3xl lg:text-4xl font-light leading-[1.25] tracking-tight">
+                            EHOP transformed our wedding into a magical experience. Their attention to detail was exceptional, and they handled everything seamlessly. The décor was breathtaking, and our guests are still talking about it!.
+                          </p>
+                          <p id="t-author" class="mt-6 text-sm text-gray-600">— Sarah Johnson, Wedding Client</p>
+                        </div> 
+                        <div class="mt-8 lg:absolute lg:right-0 lg:bottom-50 lg:mt-0">
+                          <div class="flex items-center gap-3 p-2 rounded-2xl bg-white ring-1 ring-gray-200 shadow-sm">
+                            <img id="t-next-avatar" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&amp;fit=crop&amp;w=640&amp;q=60" alt="Next client" class="h-14 w-20 object-cover rounded-xl">
+                            <div class="pr-2">
+                              <p class="text-[11px] tracking-widest text-gray-500 uppercase font-light">Next Story →</p>
+                              <p id="t-next-name" class="mt-1 text-xs text-gray-700">Michael C.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mt-10 flex items-center gap-2">
+                      <button data-dot="0" class="t-dot h-1.5 w-6 rounded-full bg-gray-900"></button>
+                      <button data-dot="1" class="t-dot h-1.5 w-1.5 rounded-full bg-gray-300"></button>
+                      <button data-dot="2" class="t-dot h-1.5 w-1.5 rounded-full bg-gray-300"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <!-- Footer -->
+    <footer class="bg-black border-t border-yellow-500/20 mt-1">
+    <div class="container mx-auto px-6 py-4">
+      <!-- Top Footer Section -->
+      <div class="h-px bg-gradient-to-r from-transparent via-yellow-500/30 to-transparent my-8"></div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <!-- Company Info -->
+      <div class="col-span-1 md:col-span-2 lg:col-span-1">
+          <div class="flex items-center mb-6">
+        <a href="#" class="inline-flex items-center gap-2" aria-label="EHOP Home">
+          <div class="text-xl sm:text-2xl font-semibold tracking-tight">
+            <span class="px-2 py-1 rounded-md border border-neutral-200 shadow-sm text-white">EHOP</span>
+          </div>
+            <span class="ml-2 text-xl tracking-tight font-medium text-white"></span>
+          </div>
+          <p class="text-gray-400 font-light mb-6 text-sm">
+            Crafting unforgettable weddings, birthdays, showers, and corporate events with style.
+          </p>
+          <div class="flex space-x-4">
+  <!-- Facebook -->
+  <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors" aria-label="Facebook">
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"/>
+    </svg>
+  </a>
+
+  <!-- TikTok -->
+  <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors" aria-label="TikTok">
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12.75 2c.414 0 .75.336.75.75v1.02c0 .553.447 1 1 1 1.54 0 3.027.49 4.236 1.403.272.202.514.454.72.743.24.33.142.79-.214 1.004l-1.066.644a.75.75 0 01-1.02-.214c-.181-.25-.406-.453-.666-.6a4.48 4.48 0 00-2.74-.563V15a4.75 4.75 0 11-3.5-4.61V6.25c0-.414.336-.75.75-.75h1zM10 17a2 2 0 100-4 2 2 0 000 4z"/>
+    </svg>
+  </a>
+
+  <!-- Instagram -->
+  <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors" aria-label="Instagram">
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm.315 4.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"/>
+    </svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-lg font-medium mb-4 text-white">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors text-sm">Home</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors text-sm">About Us</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors text-sm">Services</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors text-sm">Contact</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors text-sm">Up Coming</a></li>
+          </ul>
+        </div>
+        
+        <!-- Services -->
+        <div>
+          <h3 class="text-lg font-medium mb-4 text-white">Services</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-yellow-200 transition-colors text-sm">Wedding</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-yellow-200 transition-colors text-sm">Birthday</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-yellow-200 transition-colors text-sm">Baby Shower</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-yellow-200 transition-colors text-sm">Corporate</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-yellow-200 transition-colors text-sm">Rentals & Decor</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact -->
+        <div>
+          <h3 class="text-lg font-medium mb-4 text-white">Contact Us</h3>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-amber-600 mt-0.5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <span class="text-gray-400 text-sm">Takoradi, Ghana</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-amber-600 mt-0.5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+              <span class="text-gray-400 text-sm">hello@ehop.event</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-amber-600 mt-0.5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+              </svg>
+              <span class="text-gray-400 text-sm">+233 (504) 6771</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Divider -->
+      <div class="h-px bg-gradient-to-r from-transparent via-yellow-500/30 to-transparent my-8"></div>
+      
+      <!-- Bottom Footer -->
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 text-sm mb-4 md:mb-0">
+          © 2025 Ever Heard of Party. All rights reserved.
+        </p>
+        <div class="flex space-x-6">
+          <a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors text-sm">Privacy Policy</a>
+          <a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors text-sm">Terms of Service</a>
+          <a href="#" class="text-gray-400 hover:text-indigo-400 transition-colors text-sm">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <script>
+      // Scroll to top on refresh and prevent restoring scroll
+      if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+      }
+      window.addEventListener('beforeunload', () => {
+        window.scrollTo(0, 0);
+      });
+      window.addEventListener('pageshow', (e) => {
+        if (e.persisted) window.scrollTo(0, 0);
+      });
+      window.addEventListener('DOMContentLoaded', () => {
+        window.scrollTo(0, 0);
+      });
+
+      // Initialize lucide icons with stroke width 1.5
+      document.addEventListener('DOMContentLoaded', () => {
+        if (window.lucide) {
+          window.lucide.createIcons({
+            attrs: { 'stroke-width': 1.5 }
+          });
+        }
+      });
+
+      // Mobile nav toggle + auto-close on link click
+      const mobileBtn = document.getElementById('mobileMenuBtn');
+      const mobileNav = document.getElementById('mobileNav');
+      if (mobileBtn && mobileNav) {
+        mobileBtn.addEventListener('click', () => {
+          mobileNav.classList.toggle('hidden');
+          mobileBtn.classList.toggle('ring-2');
+          mobileBtn.classList.toggle('ring-amber-500/40');
+        });
+
+        const mobileLinks = mobileNav.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            mobileNav.classList.add('hidden');
+            mobileBtn.classList.remove('ring-2', 'ring-amber-500/40');
+          });
+        });
+      }
+
+      // Hero carousel
+      const slides = Array.from(document.querySelectorAll('[data-hero-slide]'));
+      let idx = 0;
+      if (slides.length > 0) {
+        setInterval(() => {
+          const current = slides[idx];
+          idx = (idx + 1) % slides.length;
+          const next = slides[idx];
+          current.classList.add('opacity-0');
+          current.classList.remove('opacity-100');
+          next.classList.add('opacity-100');
+          next.classList.remove('opacity-0');
+        }, 5000);
+      }
+
+      // Lightbox
+      const lb = document.getElementById('lightbox');
+      const lbImg = document.getElementById('lightboxImg');
+      const lbClose = document.getElementById('lightboxClose');
+      const lbBtns = document.querySelectorAll('[data-lightbox-btn]');
+      lbBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const img = btn.querySelector('img');
+          if (!img) return;
+          lbImg.src = img.src.replace('w=800', 'w=1600');
+          lb.classList.remove('hidden');
+          lb.classList.add('flex');
+          document.body.classList.add('overflow-hidden');
+        });
+      });
+      const closeLb = () => {
+        lb.classList.add('hidden');
+        lb.classList.remove('flex');
+        document.body.classList.remove('overflow-hidden');
+      };
+      lbClose.addEventListener('click', closeLb);
+      lb.addEventListener('click', (e) => {
+        if (e.target === lb) closeLb();
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !lb.classList.contains('hidden')) closeLb();
+      });
+
+      // Simple form handler (demo)
+      const form = document.getElementById('bookingForm');
+      const statusEl = document.getElementById('formStatus');
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          statusEl.className = 'text-sm mt-2 text-neutral-700';
+          statusEl.textContent = 'Sending...';
+          setTimeout(() => {
+            statusEl.className = 'text-sm mt-2 text-emerald-700';
+            statusEl.textContent = 'Thanks! Your request has been received. We’ll be in touch within 24 hours.';
+            form.reset();
+          }, 900);
+        });
+      }
+      
+       // Testimonial carousel functionality
+  const testimonials = [
+    {
+      quote: "EHOP transformed our wedding into a magical experience. Their attention to detail was exceptional, and they handled everything seamlessly. The décor was breathtaking, and our guests are still talking about it!",
+      author: "Sarah Johnson, Wedding Client",
+      avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=640&q=60",
+      nextName: "Michael C.",
+      nextAvatar: "https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=640&q=60"
+    },
+    {
+      quote: "Our corporate anniversary was a huge success thanks to EHOP. Their professionalism and creativity exceeded our expectations. They managed every detail perfectly, allowing us to actually enjoy our own event!",
+      author: "Michael Chen, Corporate Client",
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=640&q=60",
+      nextName: "Amanda R.",
+      nextAvatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=640&q=60"
+    },
+    {
+      quote: "I was blown away by the baby shower EHOP created for me. Their team was so attentive and brought my vision to life in ways I couldn't have imagined. The floral arrangements and styling were absolutely stunning!",
+      author: "Amanda Roberts, Baby Shower Client",
+      avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=640&q=60",
+      nextName: "Sarah J.",
+      nextAvatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=640&q=60"
+    }
+  ];
+
+        let currentTestimonial = 0;
+
+        function updateTestimonial(index) {
+            const testimonial = testimonials[index];
+            document.getElementById('t-quote').textContent = testimonial.quote;
+            document.getElementById('t-author').textContent = `— ${testimonial.author}`;
+            document.getElementById('t-avatar').src = testimonial.avatar;
+            document.getElementById('t-next-name').textContent = testimonial.nextName;
+            document.getElementById('t-next-avatar').src = testimonial.nextAvatar;
+
+            // Update dots
+            document.querySelectorAll('.t-dot').forEach((dot, i) => {
+                if (i === index) {
+                    dot.className = 't-dot h-1.5 w-6 rounded-full bg-gray-900';
+                } else {
+                    dot.className = 't-dot h-1.5 w-1.5 rounded-full bg-gray-300';
+                }
+            });
+        }
+
+        // Navigation buttons
+        document.getElementById('t-prev').addEventListener('click', () => {
+            currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+            updateTestimonial(currentTestimonial);
+        });
+
+        document.getElementById('t-next').addEventListener('click', () => {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            updateTestimonial(currentTestimonial);
+        });
+
+        // Dot navigation
+        document.querySelectorAll('.t-dot').forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentTestimonial = index;
+                updateTestimonial(currentTestimonial);
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all scroll elements
+        document.querySelectorAll('.scroll-element').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Custom CSS for animations
+        const style = document.createElement('style');
+        style.textContent = `
+            .scroll-element {
+                opacity: 0;
+                transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            
+            .fade-in-up {
+                transform: translateY(40px);
+            }
+            
+            .fade-in-left {
+                transform: translateX(-40px);
+            }
+            
+            .fade-in-right {
+                transform: translateX(40px);
+            }
+            
+            .stagger-1 {
+                transition-delay: 0.1s;
+            }
+            
+            .stagger-2 {
+                transition-delay: 0.2s;
+            }
+            
+            .stagger-3 {
+                transition-delay: 0.3s;
+            }
+            
+            .animate-in {
+                opacity: 1;
+                transform: translateY(0) translateX(0);
+            }
+
+            .text-coral-500 {
+                color: #ff6b47;
+            }
+            
+            .bg-coral-50 {
+                background-color: #fef2f2;
+            }
+            
+            .bg-coral-500 {
+                background-color: #ff6b47;
+            }
+            
+            .bg-coral-600 {
+                background-color: #e55a3b;
+            }
+            
+            .hover\\:text-coral-500:hover {
+                color: #ff6b47;
+            }
+            
+            .hover\\:bg-coral-600:hover {
+                background-color: #e55a3b;
+            }
+            
+            .ring-coral-200 {
+                --tw-ring-color: #fecaca;
+            }
+            
+            .ring-coral-300 {
+                --tw-ring-color: #fca5a5;
+            }
+            
+            .hover\\:ring-coral-300:hover {
+                --tw-ring-color: #fca5a5;
+            }
+        `;
+        document.head.appendChild(style);
+
+      // Year in footer
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
